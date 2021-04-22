@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 320px;
+    font-family: avenir_next;
 }
 
 @font-face {
@@ -54,4 +55,13 @@ p {
 a {
     text-decoration: none;
     color: white;
+    border-bottom: 0.2rem solid #fff;
+}
+
+a:hover {
+    border-bottom: 0.2rem solid #fff;
+}
+
+a:active {
+    border-bottom: 0.2rem solid #fff;
 }
