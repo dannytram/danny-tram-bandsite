@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 }
 
 body {
@@ -8,27 +8,6 @@ body {
     padding: 0;
     width: 320px;
     font-family: avenir_next;
-}
-
-@font-face {
-    font-family: avenir_next;
-    src: url(../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: avenir_next;
-    font-weight: 600;
-    font-style: demi;
-    src: url(../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
-}
-
-@font-face {
-    font-family: avenir_next;
-    font-weight: 700;
-    font-style: bold;
-    src: url(../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
 }
 
 h1, h2{
@@ -55,13 +34,12 @@ p {
 a {
     text-decoration: none;
     color: white;
-    border-bottom: 0.2rem solid #fff;
 }
 
-a:hover {
+/* a:hover {
     border-bottom: 0.2rem solid #fff;
 }
 
 a:active {
     border-bottom: 0.2rem solid #fff;
-}
+} */
