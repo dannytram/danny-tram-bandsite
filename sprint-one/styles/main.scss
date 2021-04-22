@@ -1,10 +1,4 @@
-
-.logo{
-    background-color: $bandsite-black;
-    display: flex;
-    align-items: center;
-    margin: 24px;
-}
+@import "partials/variables", "partials/fonts";
 
 .nav{
     display: flex;
@@ -13,6 +7,23 @@
     background-color: $bandsite-black;
     width: 100%;
     padding-top: 1rem;
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 24px;
+    } 
+
+    &__links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 
