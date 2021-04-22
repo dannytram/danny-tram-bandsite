@@ -81,15 +81,23 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &__spacing{
         margin-bottom: 16px;
     }
 }
 
-footer{
+.footer{
     background-color: #323232;
     color: white;
+    padding-left: 16px;
+    padding-top: 16px;
+
+    &__logo{
+        padding-top: 32px;
+    }
 }
 
 .gallery{
