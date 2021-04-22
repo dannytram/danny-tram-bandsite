@@ -9,3 +9,10 @@
         @content;
     }
 }
+
+@mixin m-h1{
+    font-size: 24px;
+    font-family: avenir_next;
+    font-weight: bold;
+    margin: 0;
+}

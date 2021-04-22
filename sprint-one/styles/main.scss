@@ -51,31 +51,25 @@
 }
 
 .main{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
     padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-}
-
-.spacing{
-    padding: 16px;
+    
 
     &__title{
-        padding-top: 16px;
+        @include m-h1();
+        color: $bandsite-black;
+}
+
+    &__image{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
     }
-}
 
-.main-text{
-    padding-top: 24px;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    color: #323232;
+    &__spacing{
+        padding-top: 16px;
+    
 }
-
+}
 .gallery{
     display: flex;
     flex-direction: row;

@@ -61,28 +61,22 @@
 }
 
 .main {
+  padding-left: 16px;
+}
+.main__title {
+  font-size: 24px;
+  font-family: avenir_next;
+  font-weight: bold;
+  margin: 0;
+  color: #323232;
+}
+.main__image {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
 }
-
-.spacing {
-  padding: 16px;
-}
-.spacing__title {
+.main__spacing {
   padding-top: 16px;
-}
-
-.main-text {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  color: #323232;
 }
 
 .gallery {
