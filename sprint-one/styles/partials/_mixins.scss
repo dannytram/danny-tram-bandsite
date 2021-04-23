@@ -16,3 +16,17 @@
     font-weight: bold;
     margin: 0;
 }
+
+@mixin m-h2{
+    font-size: 14px;
+    font-family: avenir_next;
+    font-weight: normal;
+    margin: 0;
+}
+
+@mixin m-p{
+    font-size: 13px;
+    font-family: avenir_next;
+    font-weight: normal;
+    margin: 0;
+}

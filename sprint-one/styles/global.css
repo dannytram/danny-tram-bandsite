@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 }
 
 body {
@@ -27,8 +27,8 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 /* a:hover {

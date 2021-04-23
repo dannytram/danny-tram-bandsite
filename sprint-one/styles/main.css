@@ -7,7 +7,7 @@
 @font-face {
   font-family: avenir_next;
   font-weight: 600;
-  font-style: demi;
+  font-style: normal;
   src: url(../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
 }
 @font-face {
@@ -20,22 +20,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: #323232;
   width: 100%;
+  height: 5rem;
 }
 .nav__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.nav__links {
+.nav__menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
-  padding: 0;
+  padding-bottom: 8px;
+  padding-left: 0;
   margin: 0;
+  list-style: none;
+}
+.nav__links {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: avenir_next;
+  font-weight: normal;
+  margin: 0;
+}
+.nav__links--active {
+  border-bottom: 0.15rem solid #fff;
+  text-decoration: none;
+  padding-bottom: 0.55rem;
 }
 
 .hero {
@@ -47,6 +68,10 @@
   position: relative;
 }
 .hero__text {
+  font-size: 24px;
+  font-family: avenir_next;
+  font-weight: bold;
+  margin: 0;
   position: relative;
   top: 5rem;
   padding-left: 1rem;
@@ -95,6 +120,14 @@
   max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+}
+.gallery__title {
+  font-size: 24px;
+  font-family: avenir_next;
+  font-weight: bold;
+  margin: 0;
+  color: #323232;
+  padding-left: 16px;
 }
 .gallery__spacing {
   margin-bottom: 16px;
