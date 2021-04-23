@@ -52,11 +52,12 @@
   font-family: avenir_next;
   font-weight: normal;
   margin: 0;
+  line-height: 22px;
 }
 .nav__links--active {
   border-bottom: 0.15rem solid #fff;
   text-decoration: none;
-  padding-bottom: 0.55rem;
+  padding-bottom: 0.25rem;
 }
 
 .hero {
@@ -71,6 +72,7 @@
   font-size: 24px;
   font-family: avenir_next;
   font-weight: bold;
+  line-height: 32px;
   margin: 0;
   position: relative;
   top: 5rem;
@@ -93,6 +95,7 @@
   font-size: 24px;
   font-family: avenir_next;
   font-weight: bold;
+  line-height: 32px;
   margin: 0;
   color: #323232;
   padding-top: 16px;
@@ -125,6 +128,7 @@
   font-size: 24px;
   font-family: avenir_next;
   font-weight: bold;
+  line-height: 32px;
   margin: 0;
   color: #323232;
   padding-left: 16px;

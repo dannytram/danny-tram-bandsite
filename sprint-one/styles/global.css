@@ -11,21 +11,6 @@ body {
 }
 
 
-
-h3 {
-    font-size: 14px;
-    font-family: avenir_next;
-    line-height: 1.375rem;
-    font-weight: demi;
-    margin: 0;
-}
-
-p {
-    font-size: 13px;
-    font-family: avenir_next;
-    line-height: 1.125rem;
-}
-
 a {
     color: white;
     text-decoration: none;
