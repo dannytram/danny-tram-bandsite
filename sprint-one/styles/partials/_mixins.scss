@@ -1,14 +1,18 @@
+// <--- BREAKPOINTS --->
+
 @mixin tablet{
-    @media screen and (min-width: $tablet-breakpoint){
+    @media (min-width: $tablet-breakpoint){
         @content;
     }
 }
 
 @mixin desktop {
-    @media screen and (min-width: $desktop-breakpoint){
+    @media (min-width: 1280px){
         @content;
     }
 }
+
+// <--- TYPOGRAPHY --->
 
 @mixin m-h1{
     font-size: 24px;
