@@ -1,13 +1,13 @@
 // <--- BREAKPOINTS --->
 
 @mixin tablet{
-    @media (min-width: $tablet-breakpoint){
+    @media screen and (min-width: $tablet-breakpoint){
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: 1280px){
+    @media screen and (min-width: $desktop-breakpoint){
         @content;
     }
 }

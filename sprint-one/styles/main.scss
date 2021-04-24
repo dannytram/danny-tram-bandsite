@@ -64,7 +64,7 @@
             border-bottom: 0.15rem solid #fff;
 
             @include tablet{
-            border-bottom: 0.25rem solid #fff;
+            border-bottom: 0.2rem solid #fff;
             } 
         }
     }
@@ -74,9 +74,15 @@
     background: url(../assets/images/hero-bio.jpg);
     background-position: center;
     background-size: cover;
-    max-width: 767px;
-    min-height: 12.5rem;
+    max-width: 100%;
+    min-height: 13rem;
     position: relative;
+    @include tablet{
+        min-height: 26rem
+    }
+    @include desktop{
+        min-height: 52rem;
+    }
 
     &__text{
         @include m-h1();
@@ -84,6 +90,10 @@
         top: 5rem;
         padding-left: 1rem;
         color: white;
+        @include tablet{
+            @include td-h1;
+            padding-left: 5rem;
+        }
     }
 
     &__opacity{
@@ -105,23 +115,65 @@
         color: $bandsite-black;
         padding-top: 16px;
         padding-bottom: 8px;
+        @include tablet{
+            @include td-h2;
+            padding-left: 16px;
+        }
     }
 
     &__image{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
         padding-bottom: 16px;
+        @include tablet{
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
     }
+
+    &__quote{
+        @include tablet{
+            padding-right: 5rem;
+            padding-left: 5rem;
+    }
+}
 
     &__title-spacing{
         padding-top: 16px;
         padding-left: 16px;
         padding-right: 16px;
+        @include tablet{
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
     }
-    &__article-spacing{
-        padding-left: 16px;
-        padding-right: 16px;
+
+    &__article{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
+}
+    &__article-spacing-left{
+        margin-left: 16px;
+        margin-right: 16px;
+        @include tablet{
+            max-width: 50%;
+            padding-left: 64px;
+            margin-right: 0;
+        }
+    }
+
+    &__article-spacing-right{
+            margin-left: 16px;
+            margin-right: 16px;
+            @include tablet{
+                max-width: 50%;
+                padding-right: 64px;
+                margin-right: 0;
+            }
     }
 }
 
@@ -131,6 +183,14 @@
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
 
     &__title{
         @include m-h1();
@@ -140,6 +200,9 @@
 
     &__spacing{
         margin-bottom: 16px;
+        @include tablet {
+            width: 30%;
+        }
     }
 }
 
@@ -150,11 +213,49 @@
     padding-top: 16px;
     @include m-p();
 
-    &__logo{
-        padding-top: 32px;
+    &__top{
+        @include tablet {
+        padding-left: 32px;
+        display: flex;
+        flex-direction: c;
+        align-items: baseline;
     }
+}
+
+    &__logo{
+        display: none;
+        @include tablet {
+            display: block;
+            margin-left: auto;
+            margin-right: 64px;
+    }   
+}
+
+&__logo-mobile{
+    width: 120px;
+    padding-top: 16px;
+    @include tablet {
+        display: none;
+    }
+}
 
     &__social{
-        margin-right: 16px;
+        margin-left: 32px;
+    }
+
+    &__contacts{
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 32px;
+            padding-right: 32px;
+    }
+}
+
+    &__copyright{
+        @include tablet{
+            padding-left: 32px;
+        }
     }
 }
