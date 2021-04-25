@@ -17,25 +17,22 @@
 @mixin m-h1{
     font-size: 24px;
     font-family: avenir_next;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 32px;
-    margin: 0;
 }
 
 @mixin m-h2{
     font-size: 14px;
     font-family: avenir_next;
-    font-weight: normal;
-    margin: 0;
+    font-weight: 600;
     line-height: 22px;
 }
 
 @mixin m-p{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-family: avenir_next;
-    font-weight: normal;
-    margin: 0;
-    line-height: 18px;
+    font-weight: 400;
+    line-height: 1.125rem;
 }
 
 @mixin td-h1{

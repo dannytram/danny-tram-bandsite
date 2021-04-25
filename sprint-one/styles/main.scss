@@ -26,8 +26,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
         @include desktop{
             padding-bottom: 1.5rem;
         }
@@ -47,13 +47,6 @@
             
         }
     }
-
-    // &__link{
-    //     @include tablet{
-    //         margin-left: 20px;
-    //         margin-right: 20px;
-    //     }
-    // }
 
     &__links {
         flex-basis: 50%;
@@ -79,6 +72,11 @@
                 padding-bottom: 1.6rem;
             }
         }
+
+        &--inactive{
+            color: $silver;
+            font-weight: normal;
+        }
     }
 }
 
@@ -87,7 +85,7 @@
     background-position: center;
     background-size: cover;
     max-width: 100%;
-    min-height: 15rem;
+    min-height: 12.5rem;
     position: relative;
     @include tablet{
         min-height: 26rem;
@@ -102,7 +100,7 @@
     &__text{
         @include m-h1();
         position: relative;
-        top: 6.5rem;
+        top: 5.25rem;
         padding-left: 1rem;
         color: white;
         @include tablet{
@@ -127,15 +125,15 @@
 }
 
 .main{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     
 
     &__title{
         @include m-h1();
         color: $bandsite-black;
-        padding-top: 16px;
-        padding-bottom: 8px;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
         @include tablet{
             @include td-h2;
             padding-left: 36px;
@@ -159,7 +157,7 @@
 }
 
     &__image-crop{
-        height: 13rem;
+        height: 11rem;
         object-fit: cover;
         object-position: 0 100%;
         @include tablet{
@@ -173,6 +171,9 @@
     }
 
     &__quote{
+        color: $bandsite-black;
+        margin-bottom: 0rem;
+        line-height: 2rem;
         @include tablet{
             padding-right: 5rem;
             padding-left: 5rem;
@@ -181,34 +182,43 @@
             margin-bottom: 0rem;
     }
     @include desktop{
-        padding-right: 27rem;
+        @include td-h3;
+        padding-top: 2.5rem;
+        padding-right: 16.75rem;
         padding-left: 7.5rem;
         margin-right: 0;
+        font-weight: bold;
 }
 }
 
     &__title-spacing{
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-top: 36px;
-        margin-bottom: 0rem;
+        color: $bandsite-black;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0rem;
         @include tablet{
             padding-left: 6rem;
             padding-top: 10px;
             @include td-p;
         }
         @include desktop{
+            @include td-p;
+            font-size: 1.2rem;
+            padding-top: 1rem;
             padding-left: 8.5rem;
+            font-weight: bold;
     }
     }
 
     &__band-name{
+        padding-left: 1rem;
+        padding-top: 1rem;
         @include tablet{
             @include td-h3;
             padding-left: 6rem;
-            padding-top: 36px;
-            padding-bottom: 36px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
     }
     @include desktop{
         padding-left: 8.5rem;
@@ -217,6 +227,7 @@
 }
 
     &__article{
+        @include m-p;
         @include tablet{
             display: flex;
             flex-direction: row;
@@ -280,11 +291,10 @@
 
 
     &__title{
-        padding-top: 32px;
-        padding-bottom: 16px;
+        padding-top: 2rem;
         @include m-h1();
         color: $bandsite-black;
-        padding-left: 16px;
+        padding-left: 1rem;
         @include tablet{
             @include td-h2;
             padding-top: 5rem;
@@ -294,7 +304,7 @@
 }
 
     &__spacing{
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         @include tablet {
             width: 30%;
         }
@@ -302,20 +312,21 @@
 }
 
 .footer{
-    background-color: #323232;
+    background-color: $bandsite-black;
     color: white;
-    padding-left: 16px;
-    padding-top: 48px;
-    padding-bottom: 16px;
+    padding-left: 1rem;
+    padding-top: 1rem;
     @include m-p();
     @include tablet {
-        margin-right: 32px;
+        margin-right: 1rem;
         padding-left: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     &__top{
         @include tablet {
-        padding-left: 32px;
+        padding-left: 0.5rem;
         display: flex;
         align-items: baseline;
     }
@@ -326,7 +337,7 @@
         @include td-h2;
     }
     @include desktop{
-        padding-left: 3rem;
+        padding-left: 4.25rem;
 }
 }
 
@@ -335,33 +346,34 @@
         @include tablet {
             display: block;
             margin-left: auto;
-            margin-right: 32px;
+            margin-right: 2rem;
     }   
     @include desktop{
-        padding-right: 5rem;
+        padding-right: 3rem;
 }
 }
 
 &__logo-mobile{
     width: 120px;
-    padding-top: 16px;
+    padding-top: 3rem;
     @include tablet {
         display: none;
     }
 }
 
     &__social{
-        margin-right: 32px;
+        margin-right: 2rem;
         @include tablet {
-            margin-left: 16px;
+            margin-left: 1rem;
             margin-right: 10px;
         }
         @include desktop{
-            padding-left: 1rem;
+            padding-left: 1.25rem;
     }
     }
 
     &__contacts{
+        @include m-p;
         @include tablet{
             display: flex;
             flex-direction: row;
@@ -384,15 +396,21 @@
         @include desktop{
             padding-right: 5rem;
         }
+        &--name{
+            font-weight: bold;
+        }
     }
+
         
 
 
     &__copyright{
-        padding-bottom: 16px;
+        font-size: 0.7rem;
+        padding-bottom: 1rem;
         @include tablet{
-            padding-left: 32px;
-            padding-top: 32px;
+            @include td-p;
+            padding-left: 2rem;
+            padding-top: 2rem;
         }
         @include desktop{
             @include td-p;

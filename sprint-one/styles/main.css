@@ -44,8 +44,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 @media screen and (min-width: 1280px) {
   .nav__logo {
@@ -74,8 +74,7 @@
   padding-bottom: 0.5rem;
   font-size: 14px;
   font-family: avenir_next;
-  font-weight: normal;
-  margin: 0;
+  font-weight: 600;
   line-height: 22px;
 }
 @media screen and (min-width: 768px) {
@@ -99,13 +98,17 @@
     padding-bottom: 1.6rem;
   }
 }
+.nav__links--inactive {
+  color: #AFAFAF;
+  font-weight: normal;
+}
 
 .hero {
   background: url(../assets/images/hero-bio.jpg);
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  min-height: 15rem;
+  min-height: 12.5rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -124,11 +127,10 @@
 .hero__text {
   font-size: 24px;
   font-family: avenir_next;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 32px;
-  margin: 0;
   position: relative;
-  top: 6.5rem;
+  top: 5.25rem;
   padding-left: 1rem;
   color: white;
 }
@@ -159,18 +161,17 @@
 }
 
 .main {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .main__title {
   font-size: 24px;
   font-family: avenir_next;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 32px;
-  margin: 0;
   color: #323232;
-  padding-top: 16px;
-  padding-bottom: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__title {
@@ -203,7 +204,7 @@
   }
 }
 .main__image-crop {
-  height: 13rem;
+  height: 11rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 100%;
@@ -223,6 +224,11 @@
     height: 35rem;
   }
 }
+.main__quote {
+  color: #323232;
+  margin-bottom: 0rem;
+  line-height: 2rem;
+}
 @media screen and (min-width: 768px) {
   .main__quote {
     padding-right: 5rem;
@@ -234,17 +240,24 @@
 }
 @media screen and (min-width: 1280px) {
   .main__quote {
-    padding-right: 27rem;
+    font-size: 24px;
+    font-family: avenir_next;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-right: 16.75rem;
     padding-left: 7.5rem;
     margin-right: 0;
+    font-weight: bold;
   }
 }
 .main__title-spacing {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 36px;
-  margin-bottom: 0rem;
+  color: #323232;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0rem;
 }
 @media screen and (min-width: 768px) {
   .main__title-spacing {
@@ -259,8 +272,20 @@
 }
 @media screen and (min-width: 1280px) {
   .main__title-spacing {
+    font-size: 14px;
+    font-family: avenir_next;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    padding-top: 1rem;
     padding-left: 8.5rem;
+    font-weight: bold;
   }
+}
+.main__band-name {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__band-name {
@@ -270,8 +295,8 @@
     line-height: 22px;
     margin: 0;
     padding-left: 6rem;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -279,6 +304,12 @@
     padding-left: 8.5rem;
     padding-top: 3.5rem;
   }
+}
+.main__article {
+  font-size: 0.8rem;
+  font-family: avenir_next;
+  font-weight: 400;
+  line-height: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .main__article {
@@ -365,15 +396,13 @@
   }
 }
 .gallery__title {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 2rem;
   font-size: 24px;
   font-family: avenir_next;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 32px;
-  margin: 0;
   color: #323232;
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__title {
@@ -388,7 +417,7 @@
   }
 }
 .gallery__spacing {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__spacing {
@@ -399,24 +428,24 @@
 .footer {
   background-color: #323232;
   color: white;
-  padding-left: 16px;
-  padding-top: 48px;
-  padding-bottom: 16px;
-  font-size: 13px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
   font-family: avenir_next;
-  font-weight: normal;
-  margin: 0;
-  line-height: 18px;
+  font-weight: 400;
+  line-height: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    margin-right: 32px;
+    margin-right: 1rem;
     padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__top {
-    padding-left: 32px;
+    padding-left: 0.5rem;
     display: flex;
     align-items: baseline;
   }
@@ -432,7 +461,7 @@
 }
 @media screen and (min-width: 1280px) {
   .footer__title {
-    padding-left: 3rem;
+    padding-left: 4.25rem;
   }
 }
 .footer__logo {
@@ -442,17 +471,17 @@
   .footer__logo {
     display: block;
     margin-left: auto;
-    margin-right: 32px;
+    margin-right: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
-    padding-right: 5rem;
+    padding-right: 3rem;
   }
 }
 .footer__logo-mobile {
   width: 120px;
-  padding-top: 16px;
+  padding-top: 3rem;
 }
 @media screen and (min-width: 768px) {
   .footer__logo-mobile {
@@ -460,18 +489,24 @@
   }
 }
 .footer__social {
-  margin-right: 32px;
+  margin-right: 2rem;
 }
 @media screen and (min-width: 768px) {
   .footer__social {
-    margin-left: 16px;
+    margin-left: 1rem;
     margin-right: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__social {
-    padding-left: 1rem;
+    padding-left: 1.25rem;
   }
+}
+.footer__contacts {
+  font-size: 0.8rem;
+  font-family: avenir_next;
+  font-weight: 400;
+  line-height: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .footer__contacts {
@@ -501,13 +536,22 @@
     padding-right: 5rem;
   }
 }
+.footer__company--name {
+  font-weight: bold;
+}
 .footer__copyright {
-  padding-bottom: 16px;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright {
-    padding-left: 32px;
-    padding-top: 32px;
+    font-size: 14px;
+    font-family: avenir_next;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
