@@ -15,7 +15,9 @@
         height: 4rem;
     }
     @include desktop{
-        
+        padding-left: 7rem;
+        height: 5.5rem;
+        padding-top: 1rem;
     }
 
 
@@ -26,6 +28,9 @@
         justify-content: center;
         padding-top: 16px;
         padding-bottom: 16px;
+        @include desktop{
+            padding-bottom: 1.5rem;
+        }
     } 
 
     &__menu{
@@ -65,8 +70,14 @@
             border-bottom: 0.2rem solid #fff;
 
             @include tablet{
-            border-bottom: 0.2rem solid #fff;
+            border-bottom: 0.65rem solid #fff;
+            padding-bottom: 1.1rem;
             } 
+
+            @include desktop{
+                border-bottom: 0.65rem solid #fff;
+                padding-bottom: 1.6rem;
+            }
         }
     }
 }
@@ -79,10 +90,13 @@
     min-height: 15rem;
     position: relative;
     @include tablet{
-        min-height: 26rem
+        min-height: 26rem;
+        position: relative;
+        background-position: 50% 100%;
     }
     @include desktop{
-        min-height: 52rem;
+        min-height: 41rem;
+        background-position: 50% 25%;
     }
 
     &__text{
@@ -93,9 +107,15 @@
         color: white;
         @include tablet{
             @include td-h1;
-            padding-left: 5rem;
+            padding-left: 2.5rem;
+            padding-top: 4rem;
         }
+        @include desktop{
+            position: relative;
+            top: 13.2rem;
+            left: 5.7rem;
     }
+}
 
     &__opacity{
         background-color: rgba(0,0,0, 0.5);
@@ -118,7 +138,9 @@
         padding-bottom: 8px;
         @include tablet{
             @include td-h2;
-            padding-left: 16px;
+            padding-left: 36px;
+            padding-top: 48px;
+            padding-bottom: 36px;
         }
     }
 
@@ -130,30 +152,69 @@
             padding-right: 5rem;
             padding-left: 5rem;
         }
+        @include desktop{
+            padding-right: 7.5rem;
+            padding-left: 7.5rem;
     }
+}
 
     &__image-crop{
         height: 13rem;
         object-fit: cover;
         object-position: 0 100%;
+        @include tablet{
+            height: 18rem;
+            object-fit: cover;
+            object-position: 0 70%;
+        }
+        @include desktop{
+            height: 35rem;
+        }
     }
 
     &__quote{
         @include tablet{
             padding-right: 5rem;
             padding-left: 5rem;
+            word-spacing: 5px;
+            max-width: 94%;
+            margin-bottom: 0rem;
     }
+    @include desktop{
+        padding-right: 27rem;
+        padding-left: 7.5rem;
+        margin-right: 0;
+}
 }
 
     &__title-spacing{
         padding-top: 16px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-top: 36px;
+        margin-bottom: 0rem;
         @include tablet{
-            padding-right: 5rem;
-            padding-left: 5rem;
+            padding-left: 6rem;
+            padding-top: 10px;
+            @include td-p;
         }
+        @include desktop{
+            padding-left: 8.5rem;
     }
+    }
+
+    &__band-name{
+        @include tablet{
+            @include td-h3;
+            padding-left: 6rem;
+            padding-top: 36px;
+            padding-bottom: 36px;
+    }
+    @include desktop{
+        padding-left: 8.5rem;
+        padding-top: 3.5rem;
+    }
+}
 
     &__article{
         @include tablet{
@@ -166,9 +227,19 @@
         margin-left: 16px;
         margin-right: 16px;
         @include tablet{
+            @include td-p;
             max-width: 50%;
-            padding-left: 64px;
-            margin-right: 0;
+            padding-left: 6rem;
+            padding-right: 16px;
+            margin: 0;
+        }
+        @include desktop{
+            @include td-p;
+            display: inline-block;
+            max-width: 50%;
+            padding-left: 8.5rem;
+            padding-right: 3.5rem;
+            margin: 0;
         }
     }
 
@@ -176,9 +247,13 @@
             margin-left: 16px;
             margin-right: 16px;
             @include tablet{
+                @include td-p;
                 max-width: 50%;
-                padding-right: 64px;
-                margin-right: 0;
+                padding-left: 16px;
+                padding-right: 6rem;
+            }
+            @include desktop{
+                padding-right: 12rem;
             }
     }
 }
@@ -195,14 +270,28 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: space-evenly;
+        padding-bottom: 32px;
+        margin-right: 32px;
+    }
+    @include desktop{
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
     }
 
 
     &__title{
+        padding-top: 32px;
+        padding-bottom: 16px;
         @include m-h1();
         color: $bandsite-black;
         padding-left: 16px;
+        @include tablet{
+            @include td-h2;
+            padding-top: 5rem;
+            padding-left: 32px;
+            padding-bottom: 16px;
     }
+}
 
     &__spacing{
         margin-bottom: 16px;
@@ -216,16 +305,29 @@
     background-color: #323232;
     color: white;
     padding-left: 16px;
-    padding-top: 16px;
+    padding-top: 48px;
+    padding-bottom: 16px;
     @include m-p();
+    @include tablet {
+        margin-right: 32px;
+        padding-left: 0rem;
+    }
 
     &__top{
         @include tablet {
         padding-left: 32px;
         display: flex;
-        flex-direction: c;
         align-items: baseline;
     }
+}
+
+    &__title{
+        @include tablet {
+        @include td-h2;
+    }
+    @include desktop{
+        padding-left: 3rem;
+}
 }
 
     &__logo{
@@ -233,8 +335,11 @@
         @include tablet {
             display: block;
             margin-left: auto;
-            margin-right: 64px;
+            margin-right: 32px;
     }   
+    @include desktop{
+        padding-right: 5rem;
+}
 }
 
 &__logo-mobile{
@@ -249,23 +354,49 @@
         margin-right: 32px;
         @include tablet {
             margin-left: 16px;
+            margin-right: 10px;
         }
+        @include desktop{
+            padding-left: 1rem;
+    }
     }
 
     &__contacts{
-        @include tablet {
+        @include tablet{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding-left: 32px;
-            padding-right: 32px;
+            padding-right: 48px;
+            padding-top: 32px;
+    }
+    
+        @include desktop{
+            @include td-p;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 5rem;
     }
 }
+
+    &__company{
+        @include desktop{
+            padding-right: 5rem;
+        }
+    }
+        
+
 
     &__copyright{
         padding-bottom: 16px;
         @include tablet{
             padding-left: 32px;
+            padding-top: 32px;
         }
+        @include desktop{
+            @include td-p;
+            padding-left: 5rem;
+    }
     }
 }
