@@ -12,6 +12,7 @@
         flex-direction: row;
         justify-content: flex-start;
         padding-left: 2rem;
+        height: 4rem;
     }
     @include desktop{
         
@@ -57,11 +58,11 @@
         @include m-h2();
         @include tablet{
             margin-left: 4rem;
-            margin-top: 1rem;
+            margin-top: 1.75rem; //control the margin of the nav-line
         }
 
         &--active {
-            border-bottom: 0.15rem solid #fff;
+            border-bottom: 0.2rem solid #fff;
 
             @include tablet{
             border-bottom: 0.2rem solid #fff;
@@ -75,7 +76,7 @@
     background-position: center;
     background-size: cover;
     max-width: 100%;
-    min-height: 13rem;
+    min-height: 15rem;
     position: relative;
     @include tablet{
         min-height: 26rem
@@ -87,7 +88,7 @@
     &__text{
         @include m-h1();
         position: relative;
-        top: 5rem;
+        top: 6.5rem;
         padding-left: 1rem;
         color: white;
         @include tablet{
@@ -124,12 +125,17 @@
     &__image{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding-bottom: 16px;
+        object-fit: cover;
         @include tablet{
             padding-right: 5rem;
             padding-left: 5rem;
         }
+    }
+
+    &__image-crop{
+        height: 13rem;
+        object-fit: cover;
+        object-position: 0 100%;
     }
 
     &__quote{
@@ -240,7 +246,10 @@
 }
 
     &__social{
-        margin-left: 32px;
+        margin-right: 32px;
+        @include tablet {
+            margin-left: 16px;
+        }
     }
 
     &__contacts{
@@ -254,6 +263,7 @@
 }
 
     &__copyright{
+        padding-bottom: 16px;
         @include tablet{
             padding-left: 32px;
         }
