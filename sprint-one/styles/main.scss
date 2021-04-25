@@ -194,7 +194,6 @@
     &__title-spacing{
         color: $bandsite-black;
         padding-top: 0.5rem;
-        padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 0rem;
         @include tablet{
@@ -212,7 +211,6 @@
     }
 
     &__band-name{
-        padding-left: 1rem;
         padding-top: 1rem;
         @include tablet{
             @include td-h3;
@@ -235,13 +233,12 @@
     }
 }
     &__article-spacing-left{
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-right: 1rem;
         @include tablet{
             @include td-p;
             max-width: 50%;
             padding-left: 6rem;
-            padding-right: 16px;
+            padding-right: 1rem;
             margin: 0;
         }
         @include desktop{
@@ -255,12 +252,11 @@
     }
 
     &__article-spacing-right{
-            margin-left: 16px;
-            margin-right: 16px;
+            margin-right: 1rem;
             @include tablet{
                 @include td-p;
                 max-width: 50%;
-                padding-left: 16px;
+                padding-left: 1rem;
                 padding-right: 6rem;
             }
             @include desktop{

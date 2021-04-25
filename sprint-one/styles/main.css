@@ -1,20 +1,20 @@
 @font-face {
-  font-family: avenir_next;
-  src: url(../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+  font-family: "AvenirNext LT Pro";
+  src: url(/sprint-one/assets/fonts/AvenirNextLTPro-Regular.woff2) format("woff2"), url(/sprint-one/assets/fonts/AvenirNextLTPro-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
+  src: url(/sprint-one/assets/fonts/AvenirNextLTPro-Demi.woff2) format("woff2"), url(/sprint-one/assets/fonts/AvenirNextLTPro-Demi.woff) format("woff");
   font-weight: 600;
   font-style: normal;
-  src: url(../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
 }
 @font-face {
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
+  src: url(/sprint-one/assets/fonts/AvenirNextLTPro-Bold.woff2) format("woff2"), url(/sprint-one/assets/fonts/AvenirNextLTPro-Bold.woff) format("woff");
   font-weight: 700;
   font-style: bold;
-  src: url(../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
 }
 .nav {
   display: flex;
@@ -73,7 +73,7 @@
   justify-content: center;
   padding-bottom: 0.5rem;
   font-size: 14px;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 600;
   line-height: 22px;
 }
@@ -126,7 +126,7 @@
 }
 .hero__text {
   font-size: 24px;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 700;
   line-height: 32px;
   position: relative;
@@ -137,7 +137,7 @@
 @media screen and (min-width: 768px) {
   .hero__text {
     font-size: 60px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 68px;
     margin: 0;
@@ -166,7 +166,7 @@
 }
 .main__title {
   font-size: 24px;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 700;
   line-height: 32px;
   color: #323232;
@@ -176,7 +176,7 @@
 @media screen and (min-width: 768px) {
   .main__title {
     font-size: 36px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 44px;
     margin: 0;
@@ -241,7 +241,7 @@
 @media screen and (min-width: 1280px) {
   .main__quote {
     font-size: 24px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 22px;
     margin: 0;
@@ -255,7 +255,6 @@
 .main__title-spacing {
   color: #323232;
   padding-top: 0.5rem;
-  padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 0rem;
 }
@@ -264,7 +263,7 @@
     padding-left: 6rem;
     padding-top: 10px;
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
@@ -273,7 +272,7 @@
 @media screen and (min-width: 1280px) {
   .main__title-spacing {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
@@ -284,13 +283,12 @@
   }
 }
 .main__band-name {
-  padding-left: 1rem;
   padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__band-name {
     font-size: 24px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 22px;
     margin: 0;
@@ -307,7 +305,7 @@
 }
 .main__article {
   font-size: 0.8rem;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 400;
   line-height: 1.125rem;
 }
@@ -319,26 +317,25 @@
   }
 }
 .main__article-spacing-left {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__article-spacing-left {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
     max-width: 50%;
     padding-left: 6rem;
-    padding-right: 16px;
+    padding-right: 1rem;
     margin: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__article-spacing-left {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
@@ -350,18 +347,17 @@
   }
 }
 .main__article-spacing-right {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__article-spacing-right {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
     max-width: 50%;
-    padding-left: 16px;
+    padding-left: 1rem;
     padding-right: 6rem;
   }
 }
@@ -398,7 +394,7 @@
 .gallery__title {
   padding-top: 2rem;
   font-size: 24px;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 700;
   line-height: 32px;
   color: #323232;
@@ -407,7 +403,7 @@
 @media screen and (min-width: 768px) {
   .gallery__title {
     font-size: 36px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 44px;
     margin: 0;
@@ -431,7 +427,7 @@
   padding-left: 1rem;
   padding-top: 1rem;
   font-size: 0.8rem;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 400;
   line-height: 1.125rem;
 }
@@ -453,7 +449,7 @@
 @media screen and (min-width: 768px) {
   .footer__title {
     font-size: 36px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: bold;
     line-height: 44px;
     margin: 0;
@@ -504,7 +500,7 @@
 }
 .footer__contacts {
   font-size: 0.8rem;
-  font-family: avenir_next;
+  font-family: "AvenirNext LT Pro";
   font-weight: 400;
   line-height: 1.125rem;
 }
@@ -521,7 +517,7 @@
 @media screen and (min-width: 1280px) {
   .footer__contacts {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
@@ -546,7 +542,7 @@
 @media screen and (min-width: 768px) {
   .footer__copyright {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;
@@ -557,7 +553,7 @@
 @media screen and (min-width: 1280px) {
   .footer__copyright {
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: "AvenirNext LT Pro";
     font-weight: normal;
     line-height: 20px;
     margin: 0;

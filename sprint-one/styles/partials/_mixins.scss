@@ -16,28 +16,28 @@
 
 @mixin m-h1{
     font-size: 24px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: 700;
     line-height: 32px;
 }
 
 @mixin m-h2{
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: 600;
     line-height: 22px;
 }
 
 @mixin m-p{
     font-size: 0.8rem;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: 400;
     line-height: 1.125rem;
 }
 
 @mixin td-h1{
     font-size: 60px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: bold;
     line-height: 68px;
     margin: 0;
@@ -45,7 +45,7 @@
 
 @mixin td-h2{
     font-size: 36px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: bold;
     line-height: 44px;
     margin: 0;
@@ -53,7 +53,7 @@
 
 @mixin td-h3{
     font-size: 24px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: bold;
     line-height: 22px;
     margin: 0;
@@ -61,7 +61,7 @@
 
 @mixin td-p{
     font-size: 14px;
-    font-family: avenir_next;
+    font-family: 'AvenirNext LT Pro';
     font-weight: normal;
     line-height: 20px;
     margin: 0;
