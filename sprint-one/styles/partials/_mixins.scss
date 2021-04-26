@@ -1,65 +1,65 @@
 // <--- BREAKPOINTS --->
 
-@mixin tablet{
-    @media screen and (min-width: $tablet-breakpoint){
-        @content;
-    }
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: $desktop-breakpoint){
-        @content;
-    }
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
 }
 
 // <--- TYPOGRAPHY --->
 
-@mixin m-h1{
-    font-size: 24px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: 700;
+@mixin m-h1 {
+  font-size: 24px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: 700;
 }
 
-@mixin m-h2{
-    font-size: 14px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: 600;
+@mixin m-h2 {
+  font-size: 14px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: 600;
 }
 
-@mixin m-p{
-    font-size: 13px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: 400;
+@mixin m-p {
+  font-size: 13px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: 400;
 }
 
-@mixin td-h1{
-    font-size: 60px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: bold;
-    line-height: 68px;
-    margin: 0;
+@mixin td-h1 {
+  font-size: 60px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: bold;
+  line-height: 68px;
+  margin: 0;
 }
 
-@mixin td-h2{
-    font-size: 36px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: bold;
-    line-height: 44px;
-    margin: 0;
+@mixin td-h2 {
+  font-size: 36px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: bold;
+  line-height: 44px;
+  margin: 0;
 }
 
-@mixin td-h3{
-    font-size: 24px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: normal;
-    line-height: 22px;
-    margin: 0;
+@mixin td-h3 {
+  font-size: 24px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
 }
 
-@mixin td-p{
-    font-size: 14px;
-    font-family: 'AvenirNext LT Pro';
-    font-weight: normal;
-    line-height: 20px;
-    margin: 0;
+@mixin td-p {
+  font-size: 14px;
+  font-family: "AvenirNext LT Pro";
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
 }

@@ -1,11 +1,11 @@
 @import "partials/variables", "partials/fonts", "partials/mixins";
 
 .nav {
+  background-color: $bandsite-black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: $bandsite-black;
   width: 100%;
   margin-bottom: 0;
   @include tablet {
