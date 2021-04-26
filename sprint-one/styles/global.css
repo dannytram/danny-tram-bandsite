@@ -1,13 +1,12 @@
 * {
     box-sizing: border-box;
-    /* border: 1px dashed grey; */
+    border: 1px solid transparent;
 }
 
 body {
     margin: 0 auto;
     padding: 0;
-    /* width: 320px; */
-    font-family: 'AvenirNext LT Pro';
+    font-family: 'AvenirNext LT Pro'
 }
 
 
@@ -15,11 +14,3 @@ a {
     color: white;
     text-decoration: none;
 }
-
-/* a:hover {
-    border-bottom: 0.2rem solid #fff;
-}
-
-a:active {
-    border-bottom: 0.2rem solid #fff;
-} */

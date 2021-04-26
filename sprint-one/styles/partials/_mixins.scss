@@ -18,21 +18,18 @@
     font-size: 24px;
     font-family: 'AvenirNext LT Pro';
     font-weight: 700;
-    line-height: 32px;
 }
 
 @mixin m-h2{
     font-size: 14px;
     font-family: 'AvenirNext LT Pro';
     font-weight: 600;
-    line-height: 22px;
 }
 
 @mixin m-p{
-    font-size: 0.8rem;
+    font-size: 13px;
     font-family: 'AvenirNext LT Pro';
     font-weight: 400;
-    line-height: 1.125rem;
 }
 
 @mixin td-h1{
@@ -54,7 +51,7 @@
 @mixin td-h3{
     font-size: 24px;
     font-family: 'AvenirNext LT Pro';
-    font-weight: bold;
+    font-weight: normal;
     line-height: 22px;
     margin: 0;
 }
