@@ -1,4 +1,4 @@
-@import "partials/variables", "partials/fonts", "partials/mixins";
+@import "./partials/variables", "./partials/fonts", "./partials/mixins";
 
 .nav {
   background-color: $bandsite-black;
@@ -51,7 +51,6 @@
     display: flex;
     justify-content: center;
     padding-bottom: 0.5rem;
-    @include m-h2();
     @include tablet {
       margin-left: 4rem;
       margin-top: 1.75rem;
@@ -89,9 +88,9 @@
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  min-height: 12.5rem;
+  min-height: 18rem;
   position: relative;
-  margin-top: -1rem; //fixing mysterious bug
+  margin-top: -1.35rem; //fixing mysterious bug
   @include tablet {
     min-height: 26rem;
     position: relative;
@@ -104,10 +103,12 @@
 
   &__text {
     @include m-h1();
+    font-size: 2rem;
     font-weight: 600;
     position: relative;
     top: 5.25rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
     color: white;
     @include tablet {
       @include td-h1;
@@ -136,6 +137,7 @@
 
   &__title {
     @include m-h1();
+    font-size: 2rem;
     color: $bandsite-black;
     padding-top: 1.5rem;
     padding-bottom: 1rem;

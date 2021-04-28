@@ -1,0 +1,111 @@
+@import "../styles/partials/variables", "../styles/partials/fonts", "../styles/partials/mixins";
+
+.nav {
+    background-color: $bandsite-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    @include tablet {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 2rem;
+      height: 4rem;
+    }
+    @include desktop {
+      padding-left: 7rem;
+      height: 5.5rem;
+      padding-top: 1rem;
+    }
+  
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      @include desktop {
+        padding-bottom: 1.5rem;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      @include tablet {
+        justify-content: flex-start;
+        width: auto;
+      }
+    }
+  
+    &__links {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0.5rem;
+      @include tablet {
+        margin-left: 4rem;
+        margin-top: 1.75rem;
+      }
+  
+      &--active {
+        border-bottom: 0.2rem solid #fff;
+  
+        @include tablet {
+          border-bottom: 0.8rem solid #fff;
+          padding-bottom: 1.5rem;
+        }
+  
+        @include desktop {
+          border-bottom: 0.9rem solid rgb(145, 75, 75);
+          padding-bottom: 2rem;
+        }
+      }
+  
+      &--inactive {
+        color: $silver;
+        font-weight: normal;
+        @include tablet {
+          color: $silver;
+        }
+        @include desktop {
+          color: $silver;
+        }
+      }
+    }
+  }
+
+  .hero {
+  background: url(../assets/images/hero-shows.jpg);
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 23rem;
+  position: relative;
+
+  &__opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+    position: relative;
+  }
+
+  &__soundcloud{
+      position: relative;
+  }
+  }
