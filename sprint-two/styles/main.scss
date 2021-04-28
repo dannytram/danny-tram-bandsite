@@ -1,5 +1,6 @@
 @import "./partials/variables", "./partials/fonts", "./partials/mixins";
 
+
 .nav {
   background-color: $bandsite-black;
   display: flex;
@@ -136,7 +137,7 @@
   padding-right: 1rem;
 
   &__title {
-    @include m-h1();
+    @include m-h1;
     font-size: 2rem;
     color: $bandsite-black;
     padding-top: 1.5rem;

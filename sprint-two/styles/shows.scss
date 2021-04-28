@@ -107,5 +107,13 @@
 
   &__soundcloud{
       position: relative;
+      align-self: center;
+      max-width: 95%;
+      padding-bottom: 1.5rem;
+      padding-left: 1rem;
   }
+  }
+
+  .shows-title{
+    @include m-h1();
   }
