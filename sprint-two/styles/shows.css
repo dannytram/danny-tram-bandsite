@@ -136,4 +136,12 @@
   max-width: 95%;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
+}
+
+.shows {
+  padding-left: 1rem;
+}
+
+.shows-title {
+  font-weight: bold;
 }/*# sourceMappingURL=shows.css.map */
