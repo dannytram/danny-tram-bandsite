@@ -16,13 +16,38 @@ let commentsArray = [
     },
 ];
 
-// submitBtn.addEventListener('click',(event) => {
-//     console.log(event); event.preventDefault();
-//     let inputEl = document.querySelector("#input-field");
-//     console.log(inputEl.value);
-//     let item = document.createElement("li");
-//     item.innerText = inputEl.value;
-//     let textInput = document.querySelector("#input-field");
-//     let myList = document.querySelector("#list");
-//     myList.appendChild(item);
+const form = document.querySelector(".form");
+
+formEl.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const namePost = event.target.name.value;
+  const commentPost = event.targer.comment.value;
+}
+
+
+
+//https://flaviocopes.com/how-to-sort-array-by-date-javascript/
+
+
+
+//lab
+
+// const formEl = document.getElementById("form");
+
+// formEl.addEventListener("submit", function(event) {
+//   event.preventDefault();
+//   const passwordOne = event.target.password.value;
+//   const passwordTwo = event.target.confirmPassword.value;
+//   confirmPasswords(passwordOne, passwordTwo);
 // });
+
+// function confirmPasswords(passwordOne, passwordTwo) {
+//   if (passwordOne !== passwordTwo) {
+//     alert("Passwords don't match, try again.")
+//     return;
+//   } else {
+//     console.log(`Welcome to the site! ${passwordOne} ${passwordTwo}`);
+//   }
+// }
+
+

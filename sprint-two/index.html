@@ -79,7 +79,34 @@
         <img class="gallery__spacing" src="./assets/images/Photo-gallery-9.jpg" alt="">
     </div>
 
-    <section class="input"></section>
+    <article>
+        <h1 class="comment-section-title"> Join the Conversation</h1>
+        <div id="comments" class="comment-section">
+            <div class="comment-section__comments">
+                <div class="comment-section__icon">
+                    <img class="comment-section__profile-picture" src="./assets/images/Mohan-muruge.jpg"
+                        alt="comment-icon">
+                </div>
+                <form id="form" class="comment-section__form">
+                    <div class="comment-section__elements">
+                        <label class="comment-section__form-title">NAME
+                            <input class="comment-section__name" type="text" name="name" value="Enter your name">
+                        </label>
+                    </div>
+                    <div class="comment-section__elements">
+                        <label class="comment-section__form-title">COMMENT
+                            <input class="comment-section__comment" type="text" name="comment"
+                                value="Add a new comment">
+                        </label>
+                    </div>
+                    <button class="comment-section__button" type="submit">COMMENT</button>
+                </form>
+            </div>
+            <div>
+                <ul class="posted-comments"></ul>
+            </div>
+        </div>
+    </article>
 
     <footer class="footer">
         <div class="footer__top">
