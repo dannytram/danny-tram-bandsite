@@ -32,7 +32,7 @@ let showsArray = [
 ];
 
 let showsTitleEl = document.createElement("h1");
-showsTitleEl.classList.add("shows-title");
+showsTitleEl.classList.add("shows__title");
 showsTitleEl.innerText = "Shows";
 
 let mainEl = document.querySelector(".shows");
@@ -40,13 +40,12 @@ mainEl.appendChild(showsTitleEl);
 
 let showDateListEl = document.createElement("ul");
 showDateListEl.classList.add("shows__dates");
-
 mainEl.appendChild(showDateListEl);
 
-let allShowsEl = document.querySelector(".shows__dates");
+// let allShowsEl = document.querySelector(".shows__dates");
 
-function appendShows(array, shows) {
-  for (let i = 0; i < showsArray.length; i++) {
+function appendShows(array, showDateListEl) {
+  array.forEach(function (showsArray) {
     let showsListEl = document.createElement("li");
     showsListEl.classList.add("shows__list");
 
@@ -62,13 +61,16 @@ function appendShows(array, shows) {
     showsLocationEl.classList.add("shows__location");
     showsLocationEl.innerText = showsArray.location;
 
-    //button
+    let showsButtonEl = document.createElement("button");
+    showsButtonEl.classList.add("shows__button");
+    showsButtonEl.innerText = "BUY TICKETS"
 
     showsListEl.appendChild(showsDateEl);
     showsListEl.appendChild(showsVenueEl);
     showsListEl.appendChild(showsLocationEl);
+    showsListEl.appendChild(showsButtonEl);
     showDateListEl.appendChild(showsListEl);
-  }
+  });
 }
 
 appendShows(showsArray, showDateListEl);

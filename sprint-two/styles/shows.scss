@@ -117,10 +117,51 @@
 
   .shows{
     padding-left: 1rem;
+    padding-right: 1rem;
+
+    &__title{
+      font-weight: 1000;
+      font-size: 3rem;
+    }
+
+    &__dates{
+      list-style: none;
+      padding-left: 0;
+    }
+
+    &__list{
+      border-bottom: 0.2rem solid;
+    }
+
+
+    &__date{
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding-bottom: 2rem;
+    }
+
+    &__venue{
+      font-weight: 700;
+      padding-bottom: 2rem;
+    }
+
+    &__location{
+      font-weight: 700;
+    }
+
+    &__button{
+      color: white;
+      width: 100%;
+      height: 3rem;
+      background-color: $bandsite-black;
+      border-radius: 0.3rem;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 
-  .shows-title{
-    font-weight: bold;
-  }
+
 
   
