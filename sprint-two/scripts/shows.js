@@ -42,8 +42,6 @@ let showDateListEl = document.createElement("ul");
 showDateListEl.classList.add("shows__dates");
 mainEl.appendChild(showDateListEl);
 
-// let allShowsEl = document.querySelector(".shows__dates");
-
 function appendShows(array, showDateListEl) {
   array.forEach(function (showsArray) {
     let showsListEl = document.createElement("li");
@@ -74,3 +72,11 @@ function appendShows(array, showDateListEl) {
 }
 
 appendShows(showsArray, showDateListEl);
+
+let locationBtn = document.querySelector(".shows__button");
+
+locationBtn.addEventListener('click',(event) => {
+  event.preventDefault();
+  let showsLocationEl = document.querySelector(".shows__location");
+  console.log(showsLocationEl.value);
+});

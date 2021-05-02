@@ -137,7 +137,7 @@
   font-size: 2rem;
   font-weight: 600;
   position: relative;
-  top: 5.25rem;
+  top: 6.5rem;
   padding-left: 2rem;
   padding-top: 1rem;
   color: white;
@@ -171,10 +171,11 @@
 }
 .main__title {
   font-size: 24px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #323232;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  font-weight: bolder;
 }
 @media screen and (min-width: 768px) {
   .main__title {
@@ -226,7 +227,7 @@
 }
 .main__quote {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: bolder;
   line-height: 1.1em;
   color: #323232;
   margin-bottom: 0rem;
@@ -410,7 +411,6 @@
 }
 
 .comment-section-title {
-  padding-top: 2rem;
   font-size: 1.75rem;
   font-weight: bold;
   color: #323232;
@@ -433,8 +433,6 @@
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  margin-right: 1rem;
-  margin-top: 1rem;
 }
 .comment-section__profile-picture {
   display: inline-block;
@@ -515,7 +513,7 @@
 }
 .comment-list__name {
   color: #323232;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 1rem;
   word-break: break-all;
 }
@@ -526,7 +524,7 @@
 }
 .comment-list__text {
   color: #323232;
-  font-weight: 400;
+  font-weight: 600;
   padding-left: 4.5rem;
   padding-right: 1.5rem;
   margin-top: -0.5rem;

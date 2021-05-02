@@ -37,7 +37,7 @@ function formatDate(inputDate) {
     }
 }
 
-let commentSaver = function (comments) {
+let displayComments = function (comments) {
     postedCommentsEl.innerHTML = "";
     sortedDates(comments);
 
@@ -74,16 +74,16 @@ formEl.addEventListener("submit", function(event) {
     const namePost = event.target.name.value;
     const commentPost = event.target.comment.value;
     if (namePost && commentPost) {
-        commentArray.push({
+        commentArray.unshift({
             name: namePost,
             date: formatDate(today),
             comment: commentPost
         })
-        commentSaver(commentArray)
+        displayComments(commentArray)
         event.target.reset();
     } else {
         alert("Please Fill Out Required Fields");
     }
 });
 
-commentSaver(commentArray);
+displayComments(commentArray);

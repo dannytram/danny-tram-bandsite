@@ -99,10 +99,17 @@
   }
 
   &__text {
-    padding: 1rem;
-    color: white;
-    font-weight: 600;
+    padding: 0.5rem;
+    color: #FAFAFA;
     position: relative;
+
+    &--album{
+      padding: 0.5rem;
+      color: #FAFAFA;
+      position: relative;
+      margin-bottom: -1rem;
+      font-weight: 100;
+    }
   }
 
   &__soundcloud{
@@ -165,6 +172,114 @@
       margin-bottom: 2rem;
     }
   }
+
+  .footer {
+    background-color: $bandsite-black;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    @include m-p();
+    @include tablet {
+      margin-right: 1rem;
+      padding-left: 0rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  
+    &__top {
+      @include tablet {
+        padding-left: 0.5rem;
+        display: flex;
+        align-items: baseline;
+      }
+    }
+  
+    &__title {
+      @include tablet {
+        @include td-h2;
+        padding-left: 1.5rem;
+      }
+      @include desktop {
+        padding-left: 4.25rem;
+      }
+    }
+  
+    &__logo {
+      display: none;
+      @include tablet {
+        display: block;
+        margin-left: auto;
+        margin-right: 2.5rem;
+      }
+      @include desktop {
+        padding-right: 3rem;
+      }
+    }
+  
+    &__logo-mobile {
+      width: 120px;
+      padding-top: 3rem;
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &__social {
+      margin-right: 2rem;
+      @include tablet {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      @include desktop {
+        padding-left: 1.25rem;
+      }
+    }
+  
+    &__contacts {
+      @include m-p;
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 3rem;
+        padding-top: 2rem;
+      }
+  
+      @include desktop {
+        @include td-p;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 5rem;
+      }
+    }
+  
+    &__company {
+      @include desktop {
+        padding-right: 5rem;
+      }
+      &--name {
+        padding-top: 0.5rem;
+        font-weight: bold;
+      }
+    }
+  
+    &__copyright {
+      font-size: 0.7rem;
+      padding-bottom: 1rem;
+      @include tablet {
+        @include td-p;
+        padding-left: 2rem;
+        padding-top: 2rem;
+      }
+      @include desktop {
+        @include td-p;
+        padding-left: 5rem;
+      }
+    }
+  }
+  
 
 
 
