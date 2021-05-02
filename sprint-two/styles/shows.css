@@ -151,7 +151,9 @@
   padding-left: 0;
 }
 .shows__list {
-  border-bottom: 0.2rem solid;
+  border-bottom: 0.15rem solid;
+  margin-right: 1rem;
+  border-color: #e1e1e1;
 }
 .shows__date {
   font-size: 1.1rem;
