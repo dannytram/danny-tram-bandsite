@@ -21,7 +21,21 @@ let commentArray = [
 
 let formEl = document.querySelector(".comment-section");
 let postedCommentsEl = document.querySelector(".comment-list");
+
 let sortedDates = (comment) => comment.sort((a, b) => b.date - a.date);
+let today = new Date().toISOString().slice(0, 10)
+
+function formatDate(inputDate) {
+    var date = new Date(inputDate);
+    if (!isNaN(date.getTime())) {
+        var day = date.getDate().toString();
+        var month = (date.getMonth() + 1).toString();
+
+        return (month[1] ? month : '0' + month[0]) + '/' +
+           (day[1] ? day : '0' + day[0]) + '/' + 
+           date.getFullYear();
+    }
+}
 
 let commentSaver = function (comments) {
     postedCommentsEl.innerHTML = "";
@@ -62,7 +76,7 @@ formEl.addEventListener("submit", function(event) {
     if (namePost && commentPost) {
         commentArray.push({
             name: namePost,
-            date: new Date(),
+            date: formatDate(today),
             comment: commentPost
         })
         commentSaver(commentArray)
@@ -73,24 +87,3 @@ formEl.addEventListener("submit", function(event) {
 });
 
 commentSaver(commentArray);
-// https://flaviocopes.com/how-to-sort-array-by-date-javascript/
-
-// <-------lab---------->
-
-// const formEl = document.getElementById("form");
-
-// formEl.addEventListener("submit", function(event) {
-//   event.preventDefault();
-//   const passwordOne = event.target.password.value;
-//   const passwordTwo = event.target.confirmPassword.value;
-//   confirmPasswords(passwordOne, passwordTwo);
-// });
-
-// function confirmPasswords(passwordOne, passwordTwo) {
-//   if (passwordOne !== passwordTwo) {
-//     alert("Passwords don't match, try again.")
-//     return;
-//   } else {
-//     console.log(`Welcome to the site! ${passwordOne} ${passwordTwo}`);
-//   }
-// }

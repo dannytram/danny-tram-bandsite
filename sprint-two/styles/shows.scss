@@ -137,17 +137,19 @@
 
 
     &__date{
+      @include show-header("dates");
       font-size: 1.1rem;
       font-weight: bold;
-      padding-bottom: 2rem;
+
     }
 
     &__venue{
+      @include show-header("venue");
       font-weight: 700;
-      padding-bottom: 2rem;
     }
 
     &__location{
+      @include show-header("location");
       font-weight: 700;
     }
 

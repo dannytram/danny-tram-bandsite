@@ -90,12 +90,13 @@
                 <form id="form" class="comment-section__form">
                     <div class="comment-section__elements">
                         <label class="comment-section__form-title">NAME
-                            <input class="comment-section__name" type="text" name="name" value="Enter your name">
+                            <input class="comment-section__name" type="text" name="name" onfocus="this.value=''"
+                                value="Enter your name">
                         </label>
                     </div>
                     <div class="comment-section__elements">
                         <label class="comment-section__form-title">COMMENT
-                            <input class="comment-section__comment" type="text" name="comment"
+                            <input class="comment-section__comment" type="text" name="comment" onfocus="this.value=''"
                                 value="Add a new comment">
                         </label>
                     </div>
