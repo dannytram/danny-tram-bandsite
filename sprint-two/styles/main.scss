@@ -1,6 +1,9 @@
-@import "./partials/variables", "./partials/fonts", "./partials/mixins";
+@import "./partials/variables", "./partials/fonts", "./partials/mixins", "./partials/footer";
 
 
+// body {
+//   width: 360px;
+// }
 .nav {
   background-color: $bandsite-black;
   display: flex;
@@ -13,12 +16,12 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 2rem;
-    height: 4rem;
+    height: 6.75rem;
   }
   @include desktop {
     padding-left: 7rem;
-    height: 5.5rem;
-    padding-top: 1rem;
+    height: 7.25rem;
+    padding-top: 0rem;
   }
 
   &__logo {
@@ -52,6 +55,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 0.5rem;
+    @include m-h2();
     @include tablet {
       margin-left: 4rem;
       margin-top: 1.75rem;
@@ -334,16 +338,32 @@
   font-weight: bold;
   color: $bandsite-black;
   padding-left: 1rem;
+  @include tablet {
+    padding-left: 2rem;
+  }
+  @include desktop {
+    font-size: 2.5rem;
+    padding-left: 5rem;
+  }
 }
 
 .comment-section{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   &__comments{
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+    @include desktop {
+      padding-right: 20rem;
+      padding-left: 20em;
+    }
   }
 
   &__icon{
@@ -425,6 +445,14 @@
 .comment-list{
   list-style: none;
   padding-left: 1rem;
+  @include tablet {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  @include desktop {
+    padding-right: 20rem;
+    padding-left: 20em;
+  }
 
   &__list{
     display: flex;
@@ -458,116 +486,10 @@
 
   &__text{
     color: #323232;
-    font-weight: 600;
+    font-weight: 300;
     padding-left: 4.5rem;
     padding-right: 1.5rem;
     margin-top: -0.5rem;
   }
 }
 
-.footer {
-  background-color: $bandsite-black;
-  color: white;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  @include m-p();
-  @include tablet {
-    margin-right: 1rem;
-    padding-left: 0rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  &__top {
-    @include tablet {
-      padding-left: 0.5rem;
-      display: flex;
-      align-items: baseline;
-    }
-  }
-
-  &__title {
-    @include tablet {
-      @include td-h2;
-      padding-left: 1.5rem;
-    }
-    @include desktop {
-      padding-left: 4.25rem;
-    }
-  }
-
-  &__logo {
-    display: none;
-    @include tablet {
-      display: block;
-      margin-left: auto;
-      margin-right: 2.5rem;
-    }
-    @include desktop {
-      padding-right: 3rem;
-    }
-  }
-
-  &__logo-mobile {
-    width: 120px;
-    padding-top: 3rem;
-    @include tablet {
-      display: none;
-    }
-  }
-
-  &__social {
-    margin-right: 2rem;
-    @include tablet {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    @include desktop {
-      padding-left: 1.25rem;
-    }
-  }
-
-  &__contacts {
-    @include m-p;
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 2rem;
-      padding-right: 3rem;
-      padding-top: 2rem;
-    }
-
-    @include desktop {
-      @include td-p;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding-left: 5rem;
-    }
-  }
-
-  &__company {
-    @include desktop {
-      padding-right: 5rem;
-    }
-    &--name {
-      padding-top: 0.5rem;
-      font-weight: bold;
-    }
-  }
-
-  &__copyright {
-    font-size: 0.7rem;
-    padding-bottom: 1rem;
-    @include tablet {
-      @include td-p;
-      padding-left: 2rem;
-      padding-top: 2rem;
-    }
-    @include desktop {
-      @include td-p;
-      padding-left: 5rem;
-    }
-  }
-}

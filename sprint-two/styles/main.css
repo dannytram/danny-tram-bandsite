@@ -16,6 +16,130 @@
   font-weight: normal;
   font-style: bold;
 }
+.footer {
+  background-color: #323232;
+  color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-right: 1rem;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__top {
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 36px;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    padding-left: 4.25rem;
+  }
+}
+.footer__logo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    padding-right: 3rem;
+  }
+}
+.footer__logo-mobile {
+  width: 120px;
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo-mobile {
+    display: none;
+  }
+}
+.footer__social {
+  margin-right: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__social {
+    padding-left: 1.25rem;
+  }
+}
+.footer__contacts {
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__contacts {
+    font-size: 14px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__company {
+    padding-right: 5rem;
+  }
+}
+.footer__company--name {
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+.footer__copyright {
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 5rem;
+  }
+}
+
 .nav {
   background-color: #323232;
   display: flex;
@@ -30,14 +154,14 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 2rem;
-    height: 4rem;
+    height: 6.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .nav {
     padding-left: 7rem;
-    height: 5.5rem;
-    padding-top: 1rem;
+    height: 7.25rem;
+    padding-top: 0rem;
   }
 }
 .nav__logo {
@@ -73,6 +197,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 0.5rem;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .nav__links {
@@ -416,15 +541,39 @@
   color: #323232;
   padding-left: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .comment-section-title {
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment-section-title {
+    font-size: 2.5rem;
+    padding-left: 5rem;
+  }
+}
 
 .comment-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .comment-section__comments {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .comment-section__comments {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment-section__comments {
+    padding-right: 20rem;
+    padding-left: 20em;
+  }
 }
 .comment-section__icon {
   display: inline-block;
@@ -496,6 +645,18 @@
   list-style: none;
   padding-left: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .comment-list {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment-list {
+    padding-right: 20rem;
+    padding-left: 20em;
+  }
+}
 .comment-list__list {
   display: flex;
   flex-wrap: wrap;
@@ -524,132 +685,8 @@
 }
 .comment-list__text {
   color: #323232;
-  font-weight: 600;
+  font-weight: 300;
   padding-left: 4.5rem;
   padding-right: 1.5rem;
   margin-top: -0.5rem;
-}
-
-.footer {
-  background-color: #323232;
-  color: white;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-size: 13px;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    margin-right: 1rem;
-    padding-left: 0rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__top {
-    padding-left: 0.5rem;
-    display: flex;
-    align-items: baseline;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__title {
-    font-size: 36px;
-    margin: 0;
-    padding-left: 1.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__title {
-    padding-left: 4.25rem;
-  }
-}
-.footer__logo {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    display: block;
-    margin-left: auto;
-    margin-right: 2.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__logo {
-    padding-right: 3rem;
-  }
-}
-.footer__logo-mobile {
-  width: 120px;
-  padding-top: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__logo-mobile {
-    display: none;
-  }
-}
-.footer__social {
-  margin-right: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__social {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__social {
-    padding-left: 1.25rem;
-  }
-}
-.footer__contacts {
-  font-size: 13px;
-}
-@media screen and (min-width: 768px) {
-  .footer__contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__contacts {
-    font-size: 14px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__company {
-    padding-right: 5rem;
-  }
-}
-.footer__company--name {
-  padding-top: 0.5rem;
-  font-weight: bold;
-}
-.footer__copyright {
-  font-size: 0.7rem;
-  padding-bottom: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__copyright {
-    font-size: 14px;
-    margin: 0;
-    padding-left: 2rem;
-    padding-top: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__copyright {
-    font-size: 14px;
-    margin: 0;
-    padding-left: 5rem;
-  }
 }/*# sourceMappingURL=main.css.map */

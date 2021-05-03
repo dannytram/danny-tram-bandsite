@@ -59,3 +59,13 @@
     padding-bottom: 0.5rem;
   }
 }
+
+@mixin show-header-tablet($header){
+  &::before{
+    content: $header;
+    display: flex;
+    text-transform: uppercase;
+    color: #AFAFAF;
+    padding-bottom: 2rem;
+  }
+}

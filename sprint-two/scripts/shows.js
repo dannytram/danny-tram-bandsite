@@ -75,7 +75,7 @@ appendShows(showsArray, showDateListEl);
 
 let locationBtn = document.querySelector(".shows__button");
 
-locationBtn.addEventListener('click',(event) => {
+locationBtn.addEventListener('click', (event) => {
   event.preventDefault();
   let showsLocationEl = document.querySelector(".shows__location");
   console.log(showsLocationEl.value);
