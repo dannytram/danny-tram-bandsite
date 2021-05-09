@@ -38,18 +38,18 @@ axios
         let showsButtonEl = document.createElement("button");
         showsButtonEl.classList.add("shows__button");
         showsButtonEl.innerText = "BUY TICKETS"
-        // showsButtonEl.addEventListener('click', (event) => {
-        //   event.preventDefault();
-        //   let showsVenue = document.querySelector(".shows__venue");
-        //   console.log("hi");
+        showsButtonEl.addEventListener('click', (event) => {
+          event.preventDefault();
+          console.log(showsArray.place);
+        })
 
 
-          showsListEl.appendChild(showsDateEl);
-          showsListEl.appendChild(showsVenueEl);
-          showsListEl.appendChild(showsLocationEl);
-          showsListEl.appendChild(showsButtonEl);
-          showDateListEl.appendChild(showsListEl);
-        });
+        showsListEl.appendChild(showsDateEl);
+        showsListEl.appendChild(showsVenueEl);
+        showsListEl.appendChild(showsLocationEl);
+        showsListEl.appendChild(showsButtonEl);
+        showDateListEl.appendChild(showsListEl);
+      });
     }
 
     appendShows(showsArray, showDateListEl);
