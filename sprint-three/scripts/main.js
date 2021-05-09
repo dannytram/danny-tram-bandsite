@@ -3,30 +3,13 @@ let formEl = document.querySelector(".comment-section");
 let postedCommentsEl = document.querySelector(".comment-list");
 const API_URL = 'https://project-1-api.herokuapp.com';
 const API_KEY = '12886366-d9c3-42eb-b9c9-f2ff4cc526f4';
-
-
-
-// let today = new Date().toISOString().slice(0, 10)
-
-// function formatDate(inputDate) {
-//     var date = new Date(inputDate);
-//     if (!isNaN(date.getTime())) {
-//         var day = date.getDate().toString();
-//         var month = (date.getMonth() + 1).toString();
-
-//         return (month[1] ? month : '0' + month[0]) + '/' +
-//             (day[1] ? day : '0' + day[0]) + '/' +
-//             date.getFullYear();
-//     }
-// }
-
 let sortedDates = (comment) => comment.sort((a, b) => b.timestamp - a.timestamp);
 
 let getComments = function (comments) {
     postedCommentsEl.innerHTML = ""
-    // sortedDates(comments)
+    sortedDates(comments)
 
-    comments.forEach(function(comment) {
+    comments.forEach(function (comment) {
 
         let commentListEl = document.createElement("li");
         commentListEl.classList.add("comment-list__list");
@@ -62,7 +45,6 @@ formEl.addEventListener("submit", function (event) {
     if (namePost && commentPost) {
         let pulledComment = {
             name: namePost,
-            date: formatDate(today),
             comment: commentPost
         }
 
@@ -80,11 +62,9 @@ formEl.addEventListener("submit", function (event) {
     }
 });
 
-
 function displayComments() {
     axios
         .get(`${API_URL}/comments/?api_key=" + ${API_KEY}`)
-
         .then((response) => {
             commentsArray = response.data
             getComments(commentsArray)
