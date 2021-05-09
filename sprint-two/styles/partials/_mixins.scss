@@ -1,0 +1,71 @@
+// <--- BREAKPOINTS --->
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+// <--- TYPOGRAPHY --->
+
+@mixin m-h1 {
+  font-size: 24px;
+}
+
+@mixin m-h2 {
+  font-size: 14px;
+}
+
+@mixin m-p {
+  font-size: 13px;
+}
+
+@mixin td-h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+@mixin td-h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+@mixin td-h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+@mixin td-p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+// <--- SHOW HEADERS --->
+
+@mixin show-header($header){
+  &::before{
+    content: $header;
+    display: flex;
+    text-transform: uppercase;
+    color: #AFAFAF;
+    @include m-p;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@mixin show-header-tablet($header){
+  &::before{
+    content: $header;
+    display: flex;
+    text-transform: uppercase;
+    color: #AFAFAF;
+    padding-bottom: 2rem;
+  }
+}
