@@ -25,7 +25,7 @@ axios
 
         let showsDateEl = document.createElement("p");
         showsDateEl.classList.add("shows__date");
-        showsDateEl.innerText = showsArray.date;
+        showsDateEl.innerText = showsArray.date.toLocaleString();
 
         let showsVenueEl = document.createElement("p");
         showsVenueEl.classList.add("shows__venue");
